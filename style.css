@@ -1,0 +1,113 @@
+body{
+padding: 0px;
+margin: 0px;
+background-color: rgb(231, 241, 241);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 20px;
+  color: darkblue;
+  font-size: 20px;
+}
+
+.underline{
+  margin: 0px auto;
+  height: 3px;
+  width: 150px;
+  background-color: #bddd2a;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.col:hover{
+  transform: scale(1.01);
+  transition: 0.5s;
+  box-shadow: 3px 3px 10px rgb(186, 186, 183);
+}
+
+.col{
+  transition: 0.5s;
+  border-radius: 10px;
+  background-color: white;
+  width: 25%;
+  margin: 20px;
+}
+
+.col img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.content{
+  padding: 0px 20px 20px 20px ;
+}
+
+.content h2{
+  color: darkblue;
+}
+
+.content p{
+  color: gray;
+  font-size: 14px;
+}
+
+button{
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #f4c911;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-style: none;
+  transition: 0.5s;
+}
+
+button:hover{
+  transform: scaleX(1.05);
+  transition: 0.5s;
+  box-shadow: 3px 3px 10px rgb(186, 186, 183);
+}
+
+.view_more{
+  text-align: center;
+}
+
+
+/* Star of media query */
+
+
+@media screen and (max-width:768px){
+  .col {
+    width: 80%;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+}
+/* 
+@media screen and (max-width:425px){
+  .col {
+    width: 90%;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} */
+
+/* I have commented the above media query since I have used max if we have used min we have to write media query for all the sizes below the specified number */
+
+/*  --- This is a rough work for an over view --- */
+/* 1024 width 25%
+768 width 70%  display flex flexdirection column align items center
+425 width 80%  display flex flexdirection column align items center */
